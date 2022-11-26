@@ -1,0 +1,36 @@
+local Skybox = Instance.new("Sky")
+local sound = Instance.new("Sound",workspace)
+local disturb = Instance.new("DistortionSoundEffect",sound)
+disturb.Level = 10000
+sound.SoundId = "rbxassetid://8389041427"
+sound.Looped = true
+sound.Playing = true
+sound.Volume = 10
+Skybox.MoonAngularSize = 4000
+Skybox.SunAngularSize = 4000
+Skybox.MoonTextureId = "http://www.roblox.com/asset/?id=5962561107"
+Skybox.SunTextureId = "http://www.roblox.com/asset/?id=5962561107"
+Skybox.SkyboxBk = "http://www.roblox.com/asset/?id=11660423541"
+Skybox.SkyboxDn = "http://www.roblox.com/asset/?id=11660423541"
+Skybox.SkyboxFt = "http://www.roblox.com/asset/?id=11660423541"
+Skybox.SkyboxLf = "http://www.roblox.com/asset/?id=11660423541"
+Skybox.SkyboxRt = "http://www.roblox.com/asset/?id=11660423541"
+Skybox.SkyboxUp = "http://www.roblox.com/asset/?id=11660423541"
+game.Lighting.SkyBox:Remove()
+wait(0.1)
+Skybox.Parent = game.Lighting
+while wait(1) do
+Skybox.SkyboxBk = "http://www.roblox.com/asset/?id=7148209019"
+Skybox.SkyboxDn = "http://www.roblox.com/asset/?id=7148209019"
+Skybox.SkyboxFt = "http://www.roblox.com/asset/?id=7148209019"
+Skybox.SkyboxLf = "http://www.roblox.com/asset/?id=7148209019"
+Skybox.SkyboxRt = "http://www.roblox.com/asset/?id=7148209019"
+Skybox.SkyboxUp = "http://www.roblox.com/asset/?id=7148209019"
+wait(1)
+Skybox.SkyboxBk = "http://www.roblox.com/asset/?id=11660423541"
+Skybox.SkyboxDn = "http://www.roblox.com/asset/?id=11660423541"
+Skybox.SkyboxFt = "http://www.roblox.com/asset/?id=11660423541"
+Skybox.SkyboxLf = "http://www.roblox.com/asset/?id=11660423541"
+Skybox.SkyboxRt = "http://www.roblox.com/asset/?id=11660423541"
+Skybox.SkyboxUp = "http://www.roblox.com/asset/?id=11660423541"
+end
